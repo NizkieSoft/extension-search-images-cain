@@ -1,0 +1,1 @@
+module.exports = ['*://u1877219ml.ha002.t.justns.ru/*', '*://service.cian.ru/*'];

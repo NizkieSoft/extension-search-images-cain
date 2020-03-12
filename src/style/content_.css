@@ -1,0 +1,11 @@
+.dubl-search-item {
+  background-color: var(--dubl-bg-color) !important;
+}
+
+.dubl-search-item-equal {
+    background-color: var(--dubl-bg-color-equal) !important;
+}
+
+.dubl-marked {
+  background-color: var(--dubl-color) !important;
+}

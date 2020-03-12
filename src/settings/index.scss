@@ -1,0 +1,38 @@
+@import '~normalize.css';
+@import 'button.scss';
+@import 'slider.scss';
+@import 'checkbox.scss';
+
+body,
+html {
+  font-family: Ubuntu, Segoe UI, Optima, Trebuchet MS, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+
+  width: 400px;
+}
+
+.app-containter {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+}
+
+.app-containter > * {
+  margin-bottom: 10px;
+}
+
+.hl-dict {
+  width: 100%;
+  margin-top: 5px;
+
+  outline: 0;
+}
+
+.row {
+  display: flex;
+
+  justify-content: space-evenly;
+}

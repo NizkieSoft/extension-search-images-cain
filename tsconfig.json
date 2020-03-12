@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "paths": {
+    }
+  },
+  "exclude": [
+    "static",
+    "build",
+    "dist",
+    "node_modules"
+  ]
+}
