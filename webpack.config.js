@@ -154,7 +154,7 @@ module.exports = (env) => {
         options_page: 'settings.html',
         options_ui: {
           page: 'settings.html',
-          browser_style: false
+          // browser_style: false
         },
         background: {
           scripts: [
@@ -192,8 +192,13 @@ module.exports = (env) => {
     module: {
       rules: [
         {
-          test: /\.(js|ts)$/,
-          loader: 'babel-loader',
+          test: /\.(js)$/,
+          loaders: ['babel-loader'],
+          exclude: [/node_modules/]
+        },
+        {
+          test: /\.(ts)$/,
+          loaders: ['babel-loader', 'ts-loader'],
           exclude: [/node_modules/]
         },
         {
