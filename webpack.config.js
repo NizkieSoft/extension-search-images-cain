@@ -154,7 +154,7 @@ module.exports = (env) => {
         options_page: 'settings.html',
         options_ui: {
           page: 'settings.html',
-          browser_style: false
+          // browser_style: false
         },
         background: {
           scripts: [
