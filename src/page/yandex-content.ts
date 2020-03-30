@@ -68,11 +68,11 @@ function getAllItems() {
 }
 
 function stringify(e) {
-  return new DMessage(e.querySelector('.other-sites__outer-link').textContent, e.querySelector('.other-sites__title-link').textContent);
+  return new DMessage(e.querySelector('.other-sites__snippet-site-link').textContent, e.querySelector('.other-sites__snippet-title-link').textContent);
 }
 
 function getHlNodes() {
-  return document.querySelectorAll('.other-sites__title-link,.other-sites__desc');
+  return document.querySelectorAll('.other-sites__snippet-title-link,.other-sites__snippet-desc');
 }
 
 async function main() {
@@ -84,10 +84,23 @@ async function main() {
 
   // await Bluebird.delay(1000);
 
-  $('.other-sites__container').on('mouseup', '.other-sites__title-link,.other-sites__outer-link', function (e) {
+  $('.other-sites__container').on('mouseup', '.other-sites__snippet-title-link,.other-sites__snippet-site-link', function (e) {
     if (e.which <= 2) {
       onClick((<Element>this).closest('.other-sites__item'));
     }
+  });
+
+  $('.other-sites__preview-link').css('width', '410px !important')
+      .css('flex', '0 0 130px');
+
+  $('.other-sites__thumb').attr('width', '120')
+      .css('width', '120px !important')
+      .css('max-width', '120px !important');
+
+  $('.other-sites__preview-link').each(function(i, element) {
+    var $element = $(element);
+    var $img = $element.find('img');
+    $img.attr('src', $element.attr('href'));
   });
 }
 
