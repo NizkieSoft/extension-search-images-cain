@@ -100,7 +100,7 @@ async function main() {
   $('.other-sites__preview-link').each(function(i, element) {
     var $element = $(element);
     var $img = $element.find('img');
-    $img.attr('src', $element.attr('href'));
+    $img.attr('src', $img.attr('src').replace('n=16', 'n=120'));
   });
 }
 
